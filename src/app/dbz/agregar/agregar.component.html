@@ -1,0 +1,9 @@
+<h3>Agregar {{nuevo.nombre}}</h3>
+<hr>
+<form (ngSubmit) = "agregar()">
+	<!-- Las llaves sirven para establecer una propiedad al objeto y los parentesis sirven para emitir un evento -->
+	<!-- [value]="nuevo.nombre" (blur)="cambiarNombre($event)" -->
+	<input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre">
+	<input type="number" name="poder" [(ngModel)]="nuevo.poder">
+	<button type="submit">Agregar</button>
+</form>
